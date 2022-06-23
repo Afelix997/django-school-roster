@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>School Students</title>
+  </head>
+  <body>
+    <h2>Students</h2>
+    <ul>
+        {% for student in students %}
+        <li> {{student.name}} --- <a href="/school/students/{{student.school_id}}">Details</a></li>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
